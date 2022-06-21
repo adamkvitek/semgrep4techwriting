@@ -1,0 +1,13 @@
+rules:
+- id: autofix-markdown-stylistics-examples
+  pattern: e.g.
+  message: Semgrep found a stylistic match. The `e.g.` does not conform to Google developer style guide. Non-native English speakers may not understand this abbreviation.
+  languages:
+    - generic
+  severity: WARNING
+  fix: for example
+  metadata:
+    category: best-practice
+    technology: markdown
+    references: "See https://developers.google.com/style/word-list?hl=en and search for e.g."
+
