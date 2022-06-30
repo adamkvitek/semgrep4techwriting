@@ -1,7 +1,8 @@
 rules:
 - id: autofix-markdown-stylistics-examples
   pattern: e.g.
-  message: Semgrep found a stylistic match. The `e.g.` does not conform to Google developer style guide. Non-native English speakers may not understand this abbreviation.
+  message: >-
+    Semgrep found a stylistic match. The `e.g.` does not conform to Google developer style guide. Non-native English speakers may not understand this abbreviation. It is easily mistaken with i.e. Use "for example" instead.
   languages:
     - generic
   severity: WARNING
