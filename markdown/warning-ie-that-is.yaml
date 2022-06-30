@@ -1,0 +1,11 @@
+- id: warning-markdown-stylistics-that-is
+  pattern: i.e.
+  message: >-
+    Semgrep found a stylistic match. The `i.e.` does not conform to Google developer style guide. Non-native English speakers may not understand this abbreviation. It is easily mistaken with e.g. Use phrases such as "that is" instead.
+  languages:
+    - generic
+  severity: WARNING
+  metadata:
+    category: best-practice
+    technology: markdown
+    references: "See https://developers.google.com/style/word-list?hl=en and search for i.e."
